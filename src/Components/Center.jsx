@@ -16,6 +16,12 @@ export default function Center() {
     }=useContext(Context);
 
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        onSent();
+    }
+
+
 
 
     return (
@@ -23,7 +29,6 @@ export default function Center() {
             <div className="nav">
                 <p>Chat-Bot</p>
                 <img src={assets.user_icon} alt="" />
-
             </div>
 
             <div className="Center-container">
@@ -73,13 +78,16 @@ export default function Center() {
                
                 
                 <div className="main-bottom">
-                    <div className="search-box">
+                    <form className="search-box" onSubmit={handleSubmit}>
                         <input onChange={(e)=>setinput(e.target.value)} value={input} type="text" placeholder="Enter a prompt here" />
                         <div> <img src={assets.gallery_icon} alt="" />
                             <img src={assets.mic_icon} alt="" />
-                           {input? <img  onClick={()=>onSent()}  src={assets.send_icon} alt="" />:null}
+                           {input? 
+                           <button type="submit">
+                            <img  src={assets.send_icon} alt="" />
+                           </button>:null}
                         </div>
-                    </div>
+                    </form>
                     <p className="bottom-info">
                         Chat-bot is work according to their store data
                     </p>
