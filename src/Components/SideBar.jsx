@@ -28,7 +28,7 @@ const loadprompt = async (prompt)=>{
                     return (
                        <div onClick={()=>loadprompt(item)} className="recent-entry">
                         <img src={assets.message_icon} alt="" />
-                        <p>{item.slice(0,18)}...</p>
+                        <p className="recent-para">{item.slice(0,18)}...</p>
                     </div>  
                     )
                 })}
@@ -38,15 +38,15 @@ const loadprompt = async (prompt)=>{
             <div className="bottom">
                 <div className="bottom-item recent-entry">
                     <img src={assets.question_icon} alt="" />
-                    {extended ? <p>Help</p> : null}
+                    {extended ? <p className="recent-para">Help</p> : null}
                 </div>
                 <div className="bottom-item recent-entry">
                     <img src={assets.history_icon} alt="" />
-                    {extended ? <p>Activity</p> : null}
+                    {extended ? <p className="recent-para">Activity</p> : null}
                 </div>
                 <div className="bottom-item recent-entry">
                     <img src={assets.setting_icon} alt="" />
-                    {extended ? <p>Setting</p> : null}
+                    {extended ? <p className="recent-para">Setting</p> : null}
                 </div>
             </div>
         </div >

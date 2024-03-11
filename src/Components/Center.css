@@ -1,8 +1,11 @@
 .Center{
     flex: 1;
     min-height: 100vh;
-    padding-bottom: 15vh;
+    padding-bottom: 20vh;
+    margin: 30px;
     position: relative;
+   border-radius: 15px;
+   background-color: #1a1a1f;
 }
 
 .Center .nav{
@@ -11,17 +14,25 @@
     justify-content: space-between;
     font-size: 22px;
     padding: 20px;
-    color: #585858;
+    color: #5d5959;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgb(32, 30, 30);
+}
+.Center .nav p{
+    background-color: rgb(32, 30, 30);
 }
 
 .Center .nav img{
     width: 40px;
     border-radius: 50%;
+    background-color: rgb(32, 30, 30);
 }
 
  .Center-container{
     max-width: 900px;
     margin: auto;
+    background-color: #1a1a1f;
 }
 .Center .greet{
     margin: 50px 0px;
@@ -29,6 +40,10 @@
     color: #c4c7c5;
     font-weight: 500;
     padding: 20px;
+    background-color: #1a1a1f;
+}
+.Center .greet p{
+    background-color: #1a1a1f;
 }
 .Center .greet span{
     background: -webkit-linear-gradient(16deg,#4b90ff,#ff5546);
@@ -40,12 +55,13 @@
     grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
     gap: 15px;
     padding: 20px;
+    background-color: #1a1a1f;
 
 }
 .Center .card{
     height: 200px;
     padding: 15px;
-    background-color: #f0f4f9;
+    background-color: #33363d;
     border-radius: 10px;
     position: relative;
     cursor: pointer;
@@ -62,8 +78,9 @@
 }
 
 .Center .card p{
-    color: #585858;
+    color: white;
     font-size: 17px;
+    background-color: #33363d;
 }
 .Center .card:hover{
     background-color: #dfe4ea;
@@ -76,19 +93,25 @@
     max-width: 900px;
     padding: 0px 20px;
     margin: auto;
+    background-color: #1a1a1f;
 }
 .search-box{
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    background-color: #f0f4f9;
+    background-color: rgb(54, 52, 52);
     padding: 10px 20px;
     border-radius: 50px;
+}
+.imagesection{
+    background-color: rgb(54, 52, 52);
 }
 .search-box img{
     width: 24px;
     cursor: pointer;
+    color: rgb(232, 33, 33);
+    background-color: rgb(54, 52, 52);
 }
 .search-box input{
     flex:1;
@@ -103,6 +126,7 @@
     display: flex;
     align-items: center;
     gap: 15px;
+    background-color: rgb(54, 52, 52);
 }
 
 .Center .bottom-info{
@@ -110,11 +134,13 @@
     margin: 15px auto;
     text-align: center;
     font-weight: 300;
+    background-color: #1a1a1f;
 }
 .result{
     padding: 0px 5%;
     max-height: 70vh;
     overflow-y: scroll;
+    background-color: #1a1a1f;
 }
 
 .result::-webkit-scrollbar{
@@ -125,17 +151,25 @@
     margin: 40px 0px;
     display: flex;
     align-items: center;
+    text-align: center;
+    border-radius: 15px;
     gap: 20px;
+    height: 4rem;
+    
 }
 
 .result img{
-    width: 40px;
+    width: 45px;
     border-radius: 50%;
+    margin-left:3px ;
+    
 }
 .result-data{
     display: flex;
     align-items: start;
     gap: 20px;
+    border-radius: 20px;
+   
 }
 .loader{
     width: 100%;

@@ -34,8 +34,8 @@ export default function Center() {
             <div className="Center-container">
                 {!showResult?<>
                  <div className="greet">
-                    <p><span>Hello,Manish.</span></p>
-                    <p>HOw can i help you today?</p>
+                    <p ><span>Hello,Manish.</span></p>
+                    <p>How can i help you today?</p>
 
                 </div>
 
@@ -45,15 +45,15 @@ export default function Center() {
                         <img src={assets.compass_icon} alt="" />
                     </div>
                     <div className="card">
-                        <p>Explain Multi threading</p>
+                        <p>Create a PowerPoint Presentation on Evolution of Ai.</p>
                         <img src={assets.bulb_icon} alt="" />
                     </div>
                     <div className="card">
-                        <p>Explain why india is bigger than pakistan</p>
+                        <p>Create a beautiful message for wishing birthday.</p>
                         <img src={assets.message_icon} alt="" />
                     </div>
                     <div className="card">
-                        <p>have you watch Harry potter</p>
+                        <p>Write a Programme to Find Largest elements in Array.</p>
                         <img src={assets.code_icon} alt="" />
                     </div></div>
                 </>:
@@ -80,7 +80,7 @@ export default function Center() {
                 <div className="main-bottom">
                     <form className="search-box" onSubmit={handleSubmit}>
                         <input onChange={(e)=>setinput(e.target.value)} value={input} type="text" placeholder="Enter a prompt here" />
-                        <div> <img src={assets.gallery_icon} alt="" />
+                        <div className="imagesection"> 
                             <img src={assets.mic_icon} alt="" />
                            {input? 
                            <button type="submit">

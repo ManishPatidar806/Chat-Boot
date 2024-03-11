@@ -1,4 +1,8 @@
-
+*{
+    background-color: black;
+    color: white;
+}
 .MainBox{min-height: 100vh;
 display: flex;
+
 }
