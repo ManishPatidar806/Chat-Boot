@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import runChat from "../config/chat-bot";
+import runChat from "../config/chat-bot.js";
 
 export const Context = createContext();
 
@@ -12,7 +12,7 @@ const ContextProvider = (props)=>{
     const[loading,setloading] = useState(false);
     const[resultData,setresultData] = useState("");
 
-    const delayPara=(index , nextword)=>{
+    const delayPara=(index , nextword) => {
         setTimeout(function(){
             setresultData(prev=>prev+nextword);
         },75*index)

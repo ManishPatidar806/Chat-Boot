@@ -1,7 +1,5 @@
 import "./Center.css"
 import React, { useContext } from "react";
-// import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
 import { assets } from "./../assets/assets"
 import { Context } from "../context/context";
 export default function Center() {
