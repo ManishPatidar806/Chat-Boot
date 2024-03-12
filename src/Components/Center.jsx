@@ -59,8 +59,8 @@ export default function Center() {
                 </>:
                 <div className="result">
                     <div className="result-title">
-                    <img src={assets.user_icon} alt="" />
-                    <p>{recentPrompt}</p>
+                        <img src={assets.user_icon} alt="" />
+                        <div>{recentPrompt}</div>
                     </div>
                     <div className="result-data">
                         <img src={assets.gemini_icon} alt="" />
