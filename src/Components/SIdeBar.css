@@ -1,24 +1,27 @@
 
 .sidebar{
-    min-height: 100vh;
+    min-height: 70vh;
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: black;
     padding: 25px 15px;
     color: white;
+    min-width: 35vh;
 
 }
 
 .sidebar img{
     width: 20px;
     background-color: white;
+    min-width: 5vh;
 }
 .sidebar .menu{
     display: block;
     margin-left: 10px;
     cursor: pointer;
 }
+
 .sidebar .new-chat{
     margin-top: 50px;
     display: inline-flex;
@@ -52,12 +55,18 @@
     color: #282828;
     cursor: pointer;
   }
- .recent-para:hover{
-  background-color: #262626;
-}
+  .sidebar .recent-entry:hover p{
+    background-color: #262626;
+    color: white;
+  }
   .sidebar .recent-entry:hover{
     background-color: #262626;
     color: #262626;
+    border-radius: 15px;
+  }
+  .sidebar .recent-entry:hover img{
+    background-color: #262626;
+    color: white;
   }
 
   .sidebar .bottom{

@@ -27,8 +27,8 @@ export default function Center() {
     return (
         <div className="Center">
             <div className="nav">
-                <p>Chat-Bot</p>
-                <img src={assets.user_icon} alt="" />
+                <img  className="logo" src={assets.name_logo_icon} alt="" />
+                <img className="user" src={assets.user_icon} alt="" />
             </div>
 
             <div className="Center-container">
@@ -63,7 +63,7 @@ export default function Center() {
                         <div>{recentPrompt}</div>
                     </div>
                     <div className="result-data">
-                        <img src={assets.gemini_icon} alt="" />
+                        <img src={assets.logo_icon} alt="" />
                         {loading?
                         <div className="loader">
                             <hr />

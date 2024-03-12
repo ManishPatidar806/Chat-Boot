@@ -17,7 +17,9 @@ const loadprompt = async (prompt)=>{
     return (
         <div className="sidebar">
             <div className="top">
-                <img onClick={() => setextended((pre => !pre))} className="menu" src={assets.menu_icon} alt="" />
+               
+                 <img onClick={() => setextended((pre => !pre))} className="menu" src={assets.menu_icon} alt="" />
+            
                 <div onClick={()=>newchat()} className="new-chat">
                     <img src={assets.plus_icon} alt="" />
                     {extended ? <p>New Chat</p> : null}
@@ -27,7 +29,7 @@ const loadprompt = async (prompt)=>{
                 {prevPrompts.map((item,index)=>{
                     return (
                        <div onClick={()=>loadprompt(item)} className="recent-entry">
-                        <img src={assets.message_icon} alt="" />
+                        <img src={assets.recent_icon} alt="" />
                         <p className="recent-para">{item.slice(0,18)}...</p>
                     </div>  
                     )

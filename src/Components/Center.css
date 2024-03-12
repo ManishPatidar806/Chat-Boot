@@ -19,12 +19,15 @@
     border-top-right-radius: 15px;
     background-color: rgb(32, 30, 30);
 }
-.Center .nav p{
+.Center img{
+    max-width: 30px;
+}
+.Center .logo{
     background-color: rgb(32, 30, 30);
 }
 
-.Center .nav img{
-    width: 40px;
+.Center .nav .user{
+   max-width: 40px;
     border-radius: 50%;
     background-color: rgb(32, 30, 30);
 }
@@ -111,13 +114,12 @@
     padding: 10px 20px;
     border-radius: 50px;
 }
-.imagesection{
+.search-box  .submit{
     background-color: rgb(54, 52, 52);
 }
 .search-box img{
     width: 24px;
     cursor: pointer;
-    color: rgb(232, 33, 33);
     background-color: rgb(54, 52, 52);
 }
 .search-box input{
@@ -135,6 +137,7 @@
     gap: 15px;
     background-color: rgb(54, 52, 52);
 }
+
 
 .Center .bottom-info{
     font-size: 13px;
@@ -177,6 +180,9 @@
     gap: 20px;
     border-radius: 20px;
    
+}
+.result .result-data img{
+    width: 45px;
 }
 .loader{
     width: 100%;
