@@ -21,7 +21,6 @@ const ContextProvider = (props)=>{
     const newchat = ()=>{
         setloading(false)
         setshowResult(false)
-
     }
     const onSent = async (prompt) =>{
        setresultData("")

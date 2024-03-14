@@ -33,8 +33,11 @@
     font-size: 14px;
     color: grey;
     cursor: pointer;
+   
 }
-
+.new-chat p{
+  margin-top: 13%;
+}
 .sidebar .recent{
     display: flex;
     flex-direction: column;
@@ -48,13 +51,16 @@
   .sidebar .recent-entry{
     display: flex;
     align-items: start;
-    gap: 10px;
+    gap: 20px;
     padding: 10px;
     padding-right: 40px;
     border-radius: 50px;
     color: #282828;
     cursor: pointer;
   }
+   .sidebar .recent-para{
+    margin-top: 2%;
+   }
   .sidebar .recent-entry:hover p{
     background-color: #262626;
     color: white;

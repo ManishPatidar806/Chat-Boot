@@ -2,6 +2,8 @@ import "./Center.css"
 import React, { useContext } from "react";
 import { assets } from "./../assets/assets"
 import { Context } from "../context/context";
+import Markdown from 'react-markdown'
+import remarkGfm from 'remark-gfm';
 export default function Center() {
 
     const {
@@ -70,7 +72,7 @@ export default function Center() {
                             <hr />
                             <hr />
                         </div>
-                        :<p dangerouslySetInnerHTML={{__html:resultData}}></p>
+                        : <Markdown remarkPlugins={[remarkGfm]}>{<p dangerouslySetInnerHTML={{__html:resultData}}></p>}</Markdown>
                         }
                     </div>
                 </div>
@@ -83,9 +85,9 @@ export default function Center() {
                         <div className="imagesection"> 
                             <img src={assets.mic_icon} alt="" />
                            {input? 
-                           <button type="submit">
+                           <p type="submit">
                             <img  src={assets.send_icon} alt="" />
-                           </button>:null}
+                           </p>:null}
                         </div>
                     </form>
                     <p className="bottom-info">

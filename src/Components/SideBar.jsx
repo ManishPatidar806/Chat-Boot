@@ -22,7 +22,7 @@ const loadprompt = async (prompt)=>{
             
                 <div onClick={()=>newchat()} className="new-chat">
                     <img src={assets.plus_icon} alt="" />
-                    {extended ? <p>New Chat</p> : null}
+                    {extended ? <p  >New Chat</p> : null}
                 </div>
                 {extended ? <div className="recent">
                     <p className="recent-title">Recent</p>

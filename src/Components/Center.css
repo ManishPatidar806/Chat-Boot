@@ -1,3 +1,6 @@
+*{
+    margin: 0px;
+}
 .Center{
     flex: 1;
     min-height: 100vh;
@@ -13,21 +16,22 @@
     align-items: center;
     justify-content: space-between;
     font-size: 22px;
-    padding: 20px;
+    padding: 6px;
     color: #5d5959;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-color: rgb(32, 30, 30);
 }
 .Center img{
-    max-width: 30px;
+    max-width: 180px;
 }
 .Center .logo{
     background-color: rgb(32, 30, 30);
 }
 
 .Center .nav .user{
-   max-width: 40px;
+   max-width: 50px;
+   padding-right: 5px;
     border-radius: 50%;
     background-color: rgb(32, 30, 30);
 }
@@ -116,6 +120,7 @@
 }
 .search-box  .submit{
     background-color: rgb(54, 52, 52);
+    
 }
 .search-box img{
     width: 24px;
