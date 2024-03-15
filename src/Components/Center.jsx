@@ -2,8 +2,7 @@ import "./Center.css"
 import React, { useContext } from "react";
 import { assets } from "./../assets/assets"
 import { Context } from "../context/context";
-import Markdown from 'react-markdown'
-import remarkGfm from 'remark-gfm';
+// import Markdown from 'react-markdown'
 export default function Center() {
 
     const {
@@ -72,7 +71,7 @@ export default function Center() {
                             <hr />
                             <hr />
                         </div>
-                        : <Markdown remarkPlugins={[remarkGfm]}>{<p dangerouslySetInnerHTML={{__html:resultData}}></p>}</Markdown>
+                        : <p dangerouslySetInnerHTML={{__html:resultData}}></p>
                         }
                     </div>
                 </div>
