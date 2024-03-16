@@ -32,48 +32,50 @@ export default function Mainbox() {
           <img className="user" src={assets.user_icon} alt="" />
         </div>
         <div className="result-container">
-        {!showResult ? <>
-          <div className="greet">
-            <p ><span>Hello,Manish.</span></p>
-            <p>How can i help you today?</p>
-          </div>
-          <div className="cards">
-            <div className="card">
-              <p>Suggest beautiful places to see on an upcoming road trip</p>
-              <img src={assets.compass_icon} alt="" />
+          {!showResult ? <>
+            <div className="greet">
+              <p ><span>Hello,Manish.</span></p>
+              <p>How can i help you today?</p>
             </div>
-            <div className="card">
-              <p>Create a PowerPoint Presentation on Evolution of Ai.</p>
-              <img src={assets.bulb_icon} alt="" />
+            <div className="cards">
+              <div className="card">
+                <p>Suggest beautiful places to see on an upcoming road trip</p>
+                <img src={assets.compass_icon} alt="" />
+              </div>
+              <div className="card">
+                <p>Create a PowerPoint Presentation on Evolution of Ai.</p>
+                <img src={assets.bulb_icon} alt="" />
+              </div>
+              <div className="card">
+                <p>Create a beautiful message for wishing birthday.</p>
+                <img src={assets.message_icon} alt="" />
+              </div>
+              <div className="card">
+                <p>Write a Programme to Find Largest elements in Array.</p>
+                <img src={assets.code_icon} alt="" />
+              </div>
             </div>
-            <div className="card">
-              <p>Create a beautiful message for wishing birthday.</p>
-              <img src={assets.message_icon} alt="" />
-            </div>
-            <div className="card">
-              <p>Write a Programme to Find Largest elements in Array.</p>
-              <img src={assets.code_icon} alt="" />
-            </div>
-          </div>
-        </> :
-          <div className="result">
-            <div className="result-title">
-              <img src={assets.user_icon} alt="" />
-              <div>{recentPrompt}</div>
-            </div>
-            <div className="result-data">
-              <img src={assets.logo_icon} alt="" />
-              {loading ?
-                <div className="loader">
-                  <hr />
-                  <hr />
-                  <hr />
+          </> :
+            <div className="result">
+              <div className="result-title">
+                <img src={assets.user_icon} alt="" />
+                <div>{recentPrompt}</div>
+              </div>
+             
+                <div className="result-data">
+                  <img src={assets.logo_icon} alt="" />
+                  <div> {loading ?
+                    <div className="loader">
+                      <hr />
+                      <hr />
+                      <hr />
+                    </div>
+                    : <Markdown>{resultData}</Markdown>
+                  }</div>
                 </div>
-                : <Markdown>{resultData}</Markdown>
-              }
-            </div>
-          </div>
-        }
+              </div>
+            
+          }
         </div>
 
         <div className="main-bottom">

@@ -1,3 +1,7 @@
+
+*{
+    color: white;
+}
 .MainBox{
     height: 100vh;
     width: 100%;
@@ -13,7 +17,8 @@
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    max-width: 900px;
+    max-width: 80%;
+    min-height: 650px;
     margin: auto;
     background-color: #1a1a1f;
 }
@@ -49,11 +54,11 @@
 }
 
 .Center .greet{
-    margin: 50px 0px;
+    /* margin: 50px 0px; */
     font-size: 56px;
     color: #c4c7c5;
     font-weight: 500;
-    padding: 20px;
+    padding-left: 20px;
     background-color: #1a1a1f;
 }
 .Center .greet p{
@@ -111,6 +116,8 @@
     width: 100%;
     max-width: 900px;
     padding: 0px 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     margin: auto;
     background-color: #1a1a1f;
 }
@@ -123,9 +130,11 @@
     padding: 10px 20px;
     border-radius: 50px;
 }
-.search-box  .submit{
-    background-color: rgb(54, 52, 52);
-    
+.submit-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-bottom: 3px;
 }
 .search-box img{
     width: 24px;
@@ -169,6 +178,8 @@
     border-radius: 15px;
     padding: 0.1rem;
     gap: 20px;
+    background-color: black;
+    
 }
 .result-title div {
     height: 4rem;
@@ -188,11 +199,11 @@
 }
 .result-data{
     display: flex;
-    flex-direction: column;
     align-items: start;
     gap: 20px;
     border-radius: 20px;
-   
+    background-color: #1a1a1f;
+   border: 25px black solid;
 }
 .result-data img{
     width: 4rem;
