@@ -26,7 +26,7 @@ export default function Mainbox() {
   return (
     <div className="MainBox">
       <SideBar />
-      <div className="Center Center-container">
+      <div className="Center">
         <div className="nav">
           <img className="logo" src={assets.name_logo_icon} alt="" />
           <img className="user" src={assets.user_icon} alt="" />

@@ -8,16 +8,11 @@ export default function SideBar() {
 
 const loadprompt = async (prompt)=>{
     setrecentPrompt(prompt)
-    
     await onSent(prompt)
 }
-
-
-
     return (
         <div className="sidebar">
             <div className="top">
-               
                  <img onClick={() => setextended((pre => !pre))} className="menu" src={assets.menu_icon} alt="" />
             
                 <div onClick={()=>newchat()} className="new-chat">
