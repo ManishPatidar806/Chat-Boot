@@ -1,8 +1,13 @@
-# React + Vite
+# Chatter Box
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Chatter box is an ai Model which is basically similar to Chat-Gpt or Google Gemini.<br>
+Directly use their is no need to create an account.<br>
+It is used to ask user doubts.
 
-Currently, two official plugins are available:
+<hr>
+<h3>Some popular images is:
+<br>
+<br>
+<img src="./src/assets/Readme_image.png">
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
