@@ -23,7 +23,7 @@ export default function Mainbox() {
     e.preventDefault();
     onSent();
   }
-
+    
   return (
     <div className="MainBox">
       <SideBar />
@@ -75,7 +75,8 @@ export default function Mainbox() {
                       <hr />
                       <hr />
                     </div>
-                    : <Markdown>{resultData}</Markdown>
+                    : <p dangerouslySetInnerHTML={{__html:resultData}}></p>
+                    // <Markdown>resultdata</Markdown>
                   }</div>
                 </div>
               </div>
