@@ -3,6 +3,7 @@ import React, { useContext } from "react";
 import { assets } from "./../assets/assets"
 import { Context } from "../context/context";
 import Markdown from 'react-markdown'
+
 import "./Mainbox.css"
 
 export default function Mainbox() {
@@ -13,8 +14,8 @@ export default function Mainbox() {
     loading,
     resultData,
     setinput,
-    input
-
+    input,
+    newchat
   } = useContext(Context);
 
 
@@ -29,6 +30,10 @@ export default function Mainbox() {
       <div className="Center">
         <div className="nav">
           <img className="logo" src={assets.name_logo_icon} alt="" />
+
+          <div onClick={()=>newchat()} className="new-chat">
+                    <img className="newpage" src={assets.plus_icon} alt="" />
+                </div>
           <img className="user" src={assets.user_icon} alt="" />
         </div>
         <div className="result-container">

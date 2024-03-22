@@ -1,6 +1,7 @@
 
 *{
     color: white;
+    background-color: black;
 }
 .MainBox{
     height: 100vh;
@@ -22,11 +23,15 @@
     margin: auto;
     background-color: #1a1a1f;
 }
+.new-chat{
+    display: none;
+}
 .result-container {
     max-height: 70vh;
     flex-grow: 1;
     overflow-y: scroll;
     padding: 1rem;
+    background-color: #1a1a1f;
 }
 .Center .nav{
     display: flex;
@@ -204,10 +209,20 @@
     border-radius: 20px;
     background-color: #1a1a1f;
    border: 25px black solid;
+   
 }
 .result-data img{
     width: 4rem;
     height: 4rem;
+    background-color: #1a1a1f;
+    margin-top: 1%;
+}
+.result-data div{
+    background-color: #1a1a1f;
+    margin-top: 1%;
+}
+.result-data *{
+    background-color: #1a1a1f;
 }
 .loader{
     width: 100%;
@@ -239,12 +254,14 @@
     line-height: 1.8;
 }
 @media (max-width:600px) {
+ 
     .main-bottom input{
         flex: none;
-        width: 150px;
+        width: 150px;  
     }
     .main-bottom img{
         width: 20px;
+        
     }
     .search-box{
         padding: 5px 10px;
@@ -252,5 +269,59 @@
     .search-box div{
         gap: 5px;
     }
+    .result-data{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        border-radius: 20px;
+        background-color: #1a1a1f;
+       border: 3px black solid;
+    }
+    .result-data div{
+        margin-left: 5%;
+    }
     
 }
+@media(max-width:770px){
+    .cards{
+      display: flex;
+      flex-direction: column;
+      height: 150px;
+    }
+    .main-bottom{
+        padding:10px 20px;
+      }
+    
+  }
+  @media(max-width:600Px){
+   .newpage{
+        max-width: 50px;
+        padding-right: 5px;
+        border-radius: 50%;
+        background-color: rgb(32, 30, 30);
+    }
+    .new-chat{
+        display: contents;
+    }
+    .user{
+        display: none;
+     }
+  }
+@media(max-width:1090px){
+    .result-data {
+    width: 98%;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    border-radius: 20px;
+    background-color: #1a1a1f;
+   border: 10px black solid;
+}
+.result-data div{
+    width: 90%;
+    background-color: #1a1a1f;
+}
+
+}
+  

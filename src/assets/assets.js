@@ -14,7 +14,6 @@ import recent_icon from './recent_icon.svg'
 import message_icon from './message_icon.png'
 import code_icon from './code_icon.png'
 import send_icon from './sent_Icon.png'
-import gemini_icon from './gemini_icon.png'
 import name_logo_icon from './name_logo_icon.png'
 import logo_icon from './logo_icon.png'
 
