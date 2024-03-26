@@ -43,8 +43,8 @@ export default function Mainbox() {
         <div className="result-container">
           {!showResult ? <>
             <div className="greet">
-              <p ><span>Hello,Manish.</span></p>
-              <p>How can i help you today?</p>
+              <p ><span className="heading">Hello,Manish.</span></p>
+              <p className="heading">How can i help you ?</p>
             </div>
             <div className="cards">
               <div className="card">
