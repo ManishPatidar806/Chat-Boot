@@ -1,5 +1,5 @@
 import SideBar from "./SideBar";
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { assets } from "./../assets/assets"
 import { Context } from "../context/context";
 import Markdown from 'react-markdown'
@@ -17,6 +17,10 @@ export default function Mainbox() {
     input,
     newchat
   } = useContext(Context);
+
+  useEffect(()=>{
+    console.log(resultData);
+  }, [resultData]);
 
 
   const handleSubmit = (e) => {
@@ -75,8 +79,7 @@ export default function Mainbox() {
                       <hr />
                       <hr />
                     </div>
-                    : <p dangerouslySetInnerHTML={{__html:resultData}}></p>
-                    // <Markdown>resultdata</Markdown>
+                    :<Markdown>{resultData}</Markdown>
                   }</div>
                 </div>
               </div>
